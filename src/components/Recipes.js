@@ -13,12 +13,12 @@ import { useEffect } from 'react';
 const Recipes = () => {
    
     useEffect(() => {
-        AOS.init({duration:500})
+        AOS.init({duration:1000})
  },[] )    
 
 
     return ( 
-        <div className="mt-10 w-full space-y-10 overflow-hidden" >
+        <div className="mt-10 w-full space-y-10 overflow-x-hidden" >
             <div className='w-full lg:container lg:mx-auto p-4 flex flex-col items-center space-y-10'>
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold " data-aos="fade-up-right">Simple and tasty recipes</h1>
             <p className="mt-7 text-center  overflow-hidden" data-aos="fade-up-left">
@@ -29,8 +29,8 @@ const Recipes = () => {
            {foods.map((food) =>  {
             if (food.id < 9) {
                 return  (
-                    <Link  to={`/Recipes/${food.id}`} className="w-full">
-                    <div className='flex flex-col px-2 bg-blue-50 items-center  w-full rounded-xl ' key={food.id}>
+                    <Link  to={`/Recipes/${food.id}`} className='w-full overflow-hidden'>
+                    <div className='flex flex-col px-2 bg-blue-50 items-center  w-full rounded-xl overflow-hidden' key={food.id}>
                         <div className='relative w-full'>
                         <img src={food.image} alt="" className='w-full rounded-xl' />
                         <img src={love} alt=""  className='absolute top-2 right-2'/>

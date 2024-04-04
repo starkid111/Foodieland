@@ -14,7 +14,7 @@ const Footer = () => {
  },[] )
       
     return ( 
-        <div className='mt-20 lg:container lg:mx-auto flex flex-col space-y-5 overflow-hidden'>
+        <div className='mt-20 lg:container lg:mx-auto flex flex-col space-y-5 overflow-x-hidden'>
             <div className='flex flex-col space-y-4 md:flex-row justify-between items-center'>
                 <div className='flex flex-col space-y-6 overflow-hidden' data-aos="fade-right">
                 <img src={logo} alt=""  className='self-start'/>

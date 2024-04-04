@@ -17,7 +17,7 @@ const Categories = () => {
 
     return ( 
         <div>
-          <div className="hidden lg:container lg:mx-auto mt-12 md:flex md:flex-col space-y-14 overflow-hidden" >
+          <div className="hidden lg:container lg:mx-auto mt-12 md:flex md:flex-col space-y-14 overflow-x-hidden" >
                 <div className="flex justify-between items-center p-3">
                     <h1 className="text-5xl font-bold " data-aos="fade-up-right">Categories</h1>
                     <div className="bg-blue-50 px-3 py-2 rounded-full overflow-hidden" data-aos="fade-up-left">View all Categories</div>
