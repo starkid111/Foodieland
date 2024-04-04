@@ -53,14 +53,14 @@ const Navbar = () => {
            </button>
        </div>
 
-             <div className={`container mx-auto flex flex-col items-center justify-center space-y-14  w-1/2  bg-green-200 duration-300 p-7 z-50 h-screen  ${isMenuopen ? "block fixed  top-20% right-0" : "right-[-100%] fixed" }`}>
-                  <ul className="flex flex-col justify-center space-y-6">
+             <div className={`container mx-auto flex flex-col items-center justify-center space-y-20  w-2/3 bg-white duration-300 p-7 z-100 h-screen  ${isMenuopen ? "block fixed  top-20% right-0" : "right-[-100%] fixed" }`}>
+                  <ul className="flex flex-col justify-center space-y-14">
                   <li><NavLink to='/'> home </NavLink>  </li>
                       <li><NavLink to='/BlogList'> Blog </NavLink> </li>
                       <li><NavLink to='/Contact'> Contact </NavLink> </li>
                       <li> <NavLink to='/About'> About us </NavLink> </li>
                    </ul>
-                   <div className="flex justify-center items-center space-x-5 mt-8 ">
+                   <div className="flex justify-center items-center space-x-10 mt-8 ">
                      <img src={facebook} alt=""   className=" h-4"/>
                      <img src={instagram} alt=""  className=" h-4" />
                      <img src={twitter} alt=""  className=" h-4" />
