@@ -7,20 +7,23 @@ import { Link } from "react-router-dom";
 
 
 
+
 const Recipes2 = () => {
+
+    
     return ( 
-        <div className="lg:container lg:mx-auto mt-20">
-            <div className="flex flex-col md:flex-row gap-3 p-5 justify-between items-center">
-                <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold text-left  max-w-xl">Try this delicious recipe to make your day</h1>
-                <p className="text-left md:max-w-sm max-w-2xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos tenetur placeat dolores pariatur aperiam magnam molestiae? Laborum hic perferendis minus!</p>
+        <div className="w-full lg:container lg:mx-auto mt-20 overflow-hidden">
+            <div className="flex flex-col md:flex-row gap-3 p-5 justify-between items-center overflow-hidden">
+                <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold text-left  max-w-xl overflow-hidden" >Try this delicious recipe to make your day</h1>
+                <p className="text-left md:max-w-sm max-w-2xl overflow-hidden" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos tenetur placeat dolores pariatur aperiam magnam molestiae? Laborum hic perferendis minus!</p>
             </div>
 
-            <div className='grid place-items-center p-5 gap-4 md:grid-cols-2 space-y-6 md:space-y-0 lg:grid-cols-4 lg:container lg:mx-auto'>
+            <div className='grid place-items-center p-5 gap-4 md:grid-cols-2 space-y-6 md:space-y-0 lg:grid-cols-4 lg:container lg:mx-auto overflow-hidden' >
            {foods.map((food) =>  {
             if (food.id > 8) {
                 return  (
                     <Link  to={`/Recipes/${food.id}`} className="w-full">
-                    <div className='flex flex-col px-2 bg-blue-50 items-center  w-full rounded-xl ' key={food.id}>
+                    <div className='flex flex-col px-2 bg-blue-50 items-center  w-full rounded-xl overflow-hidden' key={food.id}>
                        
                         <div className='relative w-full'>
                         <img src={food.image} alt="" className='w-full rounded-xl' />

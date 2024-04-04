@@ -1,8 +1,12 @@
-import hero4 from '../images/hero4.png'
+import hero4 from '../images/hero4.png';
+
 
 const Suscribe = () => {
+
+  
+
     return ( 
-        <div className='relative mt-20 lg:container lg:mx-auto'>
+        <div className='relative mt-20 lg:container lg:mx-auto overflow-hidden' >
             {/**Overlay */}
             <div className='absolute flex flex-col justify-center items-center gap-4 mt-4  p-5 w-full h-full '>
              <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold '>Deliciousness to your inbox</h1>

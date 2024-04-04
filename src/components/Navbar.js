@@ -17,7 +17,7 @@ const Navbar = () => {
     }
     
     return ( 
-    <div className="w-full fixed top-0  z-20 overflow-hidden" data-aos="fade-down">
+    <div className="w-full fixed top-0  z-20 overflow-hidden" >
             
         <div className=" left hidden justify-between lg:container border-b bg-white shawdow-xl shadow-gray-100  py-7 p-5  lg:mx-auto md:flex">
     
@@ -44,7 +44,7 @@ const Navbar = () => {
 
 {/* the mobile navbar */}
          <div className="">
-        <div className="flex justify-between border-b bg-white shawdow-xl shadow-gray-100  py-5 px-8  md:hidden">
+        <div className="flex justify-between border-b z-50 bg-white shawdow-xl shadow-gray-100  py-5 px-8  md:hidden">
 
             <img src={foodieland} alt="" />
 

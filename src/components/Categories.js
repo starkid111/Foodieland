@@ -20,7 +20,7 @@ const Categories = () => {
           <div className="hidden lg:container lg:mx-auto mt-12 md:flex md:flex-col space-y-14 overflow-hidden" >
                 <div className="flex justify-between items-center p-3">
                     <h1 className="text-5xl font-bold " data-aos="fade-up-right">Categories</h1>
-                    <div className="bg-blue-50 px-3 py-2 rounded-full overflow-hidden" data-aos="fade-left">View all Categories</div>
+                    <div className="bg-blue-50 px-3 py-2 rounded-full overflow-hidden" data-aos="fade-up-left">View all Categories</div>
                </div>
                <div className='grid gap-3 grid-cols-6 overflow-hidden mt-24 ' data-aos="flip-up">
                    <img src={breakfast} alt="" />
@@ -34,10 +34,10 @@ const Categories = () => {
           {/**Mobile categories */}
           <div className="md:hidden mt-12 flex flex-col space-y-14">
                 <div className="flex justify-between items-center p-3">
-                    <h1 className="text-xl sm:text-3xl font-bold">Categories</h1>
-                    <div className="bg-blue-50 px-3 py-2 rounded-full">View all Categories</div>
+                    <h1 className="text-xl sm:text-3xl font-bold" data-aos="fade-up-right">Categories</h1>
+                    <div className="bg-blue-50 px-3 py-2 rounded-full" data-aos="fade-up-left">View all Categories</div>
                </div>
-               <div className='grid gap-4 grid-cols-4 '>
+               <div className='grid gap-4 grid-cols-4 ' data-aos="flip-up">
                    <img src={breakfast} alt="" />
                    <img src={vegan} alt="" />
                    <img src={meat} alt="" />

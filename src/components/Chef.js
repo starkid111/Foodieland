@@ -6,10 +6,10 @@ import { useEffect } from 'react';
 const Chef = () => {
 
     useEffect(() => {
-        AOS.init({duration:500})
+        AOS.init({duration:1000})
  },[] )
 
- 
+
     return ( 
         <div className="mt-14 lg:container lg:mx-auto flex flex-col items-center justify-between md:flex-row overflow-hidden">
             <div className='md:w-1/2 flex flex-col space-y-6 p-5 overflow-hidden' data-aos="flip-left">
