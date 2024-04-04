@@ -6,7 +6,9 @@ import twitter from "../images/twitter.png"
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+
 const Navbar = () => {
+
 
     const [isMenuopen, setisMenuOpen] = useState(false);
     
@@ -15,7 +17,7 @@ const Navbar = () => {
     }
     
     return ( 
-    <div className="w-full fixed top-0  z-20">
+    <div className="w-full fixed top-0  z-20 overflow-hidden" data-aos="fade-down">
             
         <div className=" left hidden justify-between lg:container border-b bg-white shawdow-xl shadow-gray-100  py-7 p-5  lg:mx-auto md:flex">
     

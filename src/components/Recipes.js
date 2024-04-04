@@ -4,18 +4,28 @@ import { LuUtensils } from "react-icons/lu";
 import love from '../images/love.png';
 import ads from '../images/Ads.png'
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 
 const Recipes = () => {
+   
+    useEffect(() => {
+        AOS.init({duration:500})
+ },[] )    
+
+
     return ( 
-        <div className="mt-10 w-full space-y-10">
+        <div className="mt-10 w-full space-y-10 overflow-hidden" >
             <div className='w-full lg:container lg:mx-auto p-4 flex flex-col items-center space-y-10'>
-            <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold ">Simple and tasty recipes</h1>
-            <p className="mt-7 text-center ">
+            <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold " data-aos="fade-up-right">Simple and tasty recipes</h1>
+            <p className="mt-7 text-center  overflow-hidden" data-aos="fade-up-left">
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim .
             </p>
             </div>
-            <div className='grid place-items-center p-5 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:container lg:mx-auto'>
+            <div className='grid place-items-center p-5 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:container lg:mx-auto overflow-hidden' data-aos="zoom-out-down">
            {foods.map((food) =>  {
             if (food.id < 9) {
                 return  (

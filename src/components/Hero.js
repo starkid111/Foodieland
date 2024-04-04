@@ -3,13 +3,21 @@ import john from '../images/john.png';
 import playCircle from '../images/PlayCircle.png';
 import { IoTimer } from "react-icons/io5";
 import { LuUtensils } from "react-icons/lu";
-import badge from "../images/Badge.png"
+import badge from "../images/Badge.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 
 const Hero = ({title , image , type}) => {
+
+    useEffect(() => {
+        AOS.init({duration:2000})
+ },[] )
+
     return ( 
-        <div className='p-4 mt-14 md:mt-20'>
+        <div className='p-4 mt-14 md:mt-20 overflow-x-hidden' data-aos="zoom-in-down">
              {/* Mobile hero section*/}
              <div className=" mobile relative h-[400px]  md:hidden sm:h-[500px]">
                   {/** overlay  */}
