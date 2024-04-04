@@ -6,7 +6,7 @@ const ContactForm = () => {
         <div className='w-full mt-24 lg:container lg:mx-auto'>
             <div className="w-full flex flex-col items-center">
                 <h1 className='text-5xl font-medium font-sans p-5 mt-7'>Contact Us</h1>
-                <div className='flex border-2 w-full md:p-3 lg:p-5 space-x-5'>
+                <div className='flex  w-full md:p-3 lg:p-5 space-x-5'>
                     <div className='w-1/3 hidden lg:block'>
                         <img src={contactImage} alt="" className='w-full'/>
                     </div>
