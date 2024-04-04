@@ -17,7 +17,7 @@ const Recipes2 = () => {
  },[] )  
 
     return ( 
-        <div className="w-full lg:container lg:mx-auto mt-20 overflow-x-hidden">
+        <div className="w-full lg:container lg:mx-auto mt-20 overflow-hidden">
             <div className="flex flex-col md:flex-row gap-3 p-5 justify-between items-center overflow-hidden">
                 <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold text-left  max-w-xl overflow-hidden" data-aos="fade-up-right">Try this delicious recipe to make your day</h1>
                 <p className="text-left md:max-w-sm max-w-2xl overflow-hidden" data-aos="fade-up-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos tenetur placeat dolores pariatur aperiam magnam molestiae? Laborum hic perferendis minus!</p>

@@ -14,7 +14,7 @@ const Instagram = () => {
  },[] )
 
     return ( 
-        <div className="mt-24 lg:container lg:mx-auto flex flex-col items-center space-y-20 p-6 overflow-x-hidden">
+        <div className="mt-24 lg:container lg:mx-auto flex flex-col items-center space-y-20 p-6 overflow-hidden">
             <div  className='flex flex-col items-center space-y-5' data-aos='fade-up'>
                 <h1 className='text-2xl md:text-3xl lg:text-5xl font-bold'>Check out @foodieland on Instagram</h1>
                 <p className='max-w-4xl '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi quibusdam temporibus dolorem, provident id odit quae autem ad voluptatem.</p>

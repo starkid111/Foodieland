@@ -18,7 +18,7 @@ const Recipes = () => {
 
 
     return ( 
-        <div className="mt-10 w-full space-y-10 overflow-x-hidden" >
+        <div className="mt-10 w-full space-y-10 overflow-hidden" >
             <div className='w-full lg:container lg:mx-auto p-4 flex flex-col items-center space-y-10'>
             <h1 className="text-2xl md:text-3xl lg:text-5xl text-center font-bold " data-aos="fade-up-right">Simple and tasty recipes</h1>
             <p className="mt-7 text-center  overflow-hidden" data-aos="fade-up-left">

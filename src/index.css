@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 
-@media (min-width: 1110px) {
-    .custom-md-breakpoint {
-      /* Set the width for the custom md breakpoint */
-      width: 100%; /* Example width */
-    }
-  }
+body {
+    overflow: hidden;
+}

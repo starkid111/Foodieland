@@ -17,7 +17,7 @@ const Hero = ({title , image , type}) => {
  },[] )
 
     return ( 
-        <div className='p-4 mt-14 md:mt-20 overflow-x-hidden' data-aos="zoom-in-down">
+        <div className='p-4 mt-14 md:mt-20 overflow-hidden' data-aos="zoom-in-down">
              {/* Mobile hero section*/}
              <div className=" mobile relative h-[400px]  md:hidden sm:h-[500px]">
                   {/** overlay  */}
@@ -64,7 +64,7 @@ const Hero = ({title , image , type}) => {
 
 
              {/**Desktop view  */}
-             <div className='hidden w-full  custom-md-breakpoint  md:flex lg:container  lg:mx-auto relative'>
+             <div className='hidden w-full    md:flex lg:container  lg:mx-auto relative'>
                 {/**Badge */}
                 <div className='absolute right-[35%] md:right-[40%]  lg:right-[45%] top-5'>
                     <img src={badge} alt="" className='w-[50%] md:w-[90%]  lg:w-[100%]' />

@@ -19,7 +19,7 @@ const Navbar = () => {
     return ( 
     <div className="w-full fixed top-0  z-20 overflow-hidden" >
             
-        <div className=" left hidden justify-between lg:container border-b bg-white shawdow-xl shadow-gray-100  py-7 p-5  lg:mx-auto md:flex overflow-x-hidden">
+        <div className=" left hidden justify-between lg:container border-b bg-white shawdow-xl shadow-gray-100  py-7 p-5  lg:mx-auto md:flex overflow-hidden">
     
             <img src={foodieland} alt="" />
           
