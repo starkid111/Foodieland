@@ -14,9 +14,9 @@ const BlogListContent = () => {
 
 
     return ( 
-        <div className=" mt-10 lg:container lg:mx-auto p-5 overflow-hidden" data-aos="zoom-in-up">
-            <div className="flex flex-col lg:flex-row">
-                <div className="flex flex-col  space-y-3 lg:w-2/3 w-full ">
+        <div className=" mt-10 lg:container lg:mx-auto p-5 overflow-hidden" >
+            <div className="flex flex-col lg:flex-row overflow-hidden">
+                <div className="flex flex-col  space-y-3 lg:w-2/3 w-full overflow-hidden" data-aos="zoom-in-up">
                     {blogs.map((blog)=> {
                         return (
                             <Link to={`/blogs/${blog.id}`}>
