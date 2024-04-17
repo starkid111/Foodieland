@@ -2,16 +2,23 @@ import { useParams } from 'react-router-dom';
 import play from '../images/play.png';
 import RecipeSide from './RecipeSide';
 import { foods } from '../data/data';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const RecipeContent = () => {
+
+    useEffect(() => {
+        AOS.init({duration:1000})
+    },[] )  ;
+
    const {id} = useParams();
     let Recipe = foods.find(food => food.id == id);
     
     return ( 
-        <div className='mt-14 lg:container lg:mx-auto' >
-            <div className='flex flex-col md:flex-row md:justify-between md:space-x-5 p-5 space-y-5 md:space-y-0 items-center '>
-                <div className='relative w-full  md:w-2/3  md:h-[600px] '>
+        <div className='mt-14 lg:container lg:mx-auto'>
+            <div className='flex flex-col md:flex-row md:justify-between md:space-x-5 p-5 space-y-5 md:space-y-0 items-center overflow-hidden' data-aos="zoom-in-up">
+                <div className='relative w-full  md:w-2/3  md:h-[600px] overflow-hidden'>
                     <img src={Recipe.image} alt=""  className='w-full h-full rounded-xl object-cover'/>
                     <img src={play} alt=""  className='absolute top-[45%] right-[45%] w-16 md:w-24'/>
                 </div>
@@ -49,14 +56,14 @@ const RecipeContent = () => {
                 </div>
             </div>
             
-            <div className='p-5'>
-            <p>{Recipe.description}</p>
+            <div className='p-5 overflow-hidden'>
+            <p data-aos="zoom-in-up">{Recipe.description}</p>
             </div>
 
 
-            <div className='flex flex-col md:space-x-12 w-full p-5 md:flex-row'>
-                  <div className='flex-col w-full space-y-6'>
-                      <div className='flex flex-col space-y-7'>
+            <div className='flex flex-col md:space-x-12 w-full p-5 md:flex-row overflow-hidden ' >
+                  <div className='flex-col w-full space-y-6 overflow-hidden'  data-aos="zoom-in-up" >
+                      <div className='flex flex-col space-y-7 overflow-hidden'>
                         <h1 className='text-3xl font-bold'>Ingredients</h1>
                         <div className='flex flex-col space-y-6'>
                             <div className='flex  space-x-4'>
@@ -124,7 +131,7 @@ const RecipeContent = () => {
                       </div>
                   </div>
 
-                  <div className=''>
+                  <div className='overflow-hidden' data-aos="zoom-in-up">
                     <RecipeSide  title = "Other recipes" className="w-full" />
                   </div>
             </div>
