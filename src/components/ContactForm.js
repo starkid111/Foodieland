@@ -1,9 +1,19 @@
 import contactImage from '../images/contactImage.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 const ContactForm = () => {
+   
+
+    useEffect(() => {
+        AOS.init({duration:2000})
+ },[] )
+
+
     return ( 
-        <div className='w-full mt-24 lg:container lg:mx-auto'>
+        <div className='w-full mt-24 lg:container lg:mx-auto overflow-hidden' data-aos="zoom-in-down">
             <div className="w-full flex flex-col items-center">
                 <h1 className='text-5xl font-medium font-sans p-5 mt-7'>Contact Us</h1>
                 <div className='flex  w-full md:p-3 lg:p-5 space-x-5'>
