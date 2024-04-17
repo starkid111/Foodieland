@@ -10,7 +10,7 @@ const BlogListContent = () => {
 
     useEffect(() => {
         AOS.init({duration:2000})
- },[] )
+ },[] );
 
 
     return ( 
