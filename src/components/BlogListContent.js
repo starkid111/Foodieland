@@ -2,9 +2,19 @@ import { Link } from "react-router-dom";
 import { blogs } from "../data/BlogListData";
 import { foods } from "../data/data";
 import Ads from '../images/Ads.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const BlogListContent = () => {
+
+    useEffect(() => {
+        AOS.init({duration:2000})
+ },[] )
+
+
     return ( 
-        <div className=" mt-10 lg:container lg:mx-auto p-5">
+        <div className=" mt-10 lg:container lg:mx-auto p-5 overflow-hidden" data-aos="zoom-in-up">
             <div className="flex flex-col lg:flex-row">
                 <div className="flex flex-col  space-y-3 lg:w-2/3 w-full ">
                     {blogs.map((blog)=> {
