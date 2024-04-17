@@ -42,7 +42,7 @@ const BlogListContent = () => {
                     })}
                 </div>
 
-               <div className="flex flex-col space-y-12 lg:w-1/3 w-full ">
+               <div className="flex flex-col space-y-12 lg:w-1/3 w-full overflow-hidden" data-aos="zoom-in-up">
                 <h1 className="font-bold text-4xl ">Tasty Recipe</h1>
                 <div className="space-y-5">
                      {foods.map((food) => {
