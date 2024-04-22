@@ -23,7 +23,7 @@ const Recipes2 = () => {
                 <p className="text-left md:max-w-sm max-w-2xl overflow-hidden" data-aos="fade-up-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos tenetur placeat dolores pariatur aperiam magnam molestiae? Laborum hic perferendis minus!</p>
             </div>
 
-            <div className='grid place-items-center p-5 gap-4 md:grid-cols-2 space-y-6 md:space-y-0 lg:grid-cols-4 lg:container lg:mx-auto overflow-hidden' data-aos="flip-down">
+            <div className='grid place-items-center p-5 gap-4 md:grid-cols-2 space-y-6 md:space-y-0 lg:grid-cols-4 lg:container lg:mx-auto overflow-hidden' >
            {foods.map((food) =>  {
             if (food.id > 8) {
                 return  (

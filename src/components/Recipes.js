@@ -25,7 +25,7 @@ const Recipes = () => {
             Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim .
             </p>
             </div>
-            <div className='grid place-items-center p-5 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:container lg:mx-auto overflow-hidden' data-aos="zoom-out-down">
+            <div className='grid place-items-center p-5 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:container lg:mx-auto overflow-hidden' >
            {foods.map((food) =>  {
             if (food.id < 9) {
                 return  (

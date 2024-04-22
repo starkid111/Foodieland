@@ -19,7 +19,7 @@ const Instagram = () => {
                 <h1 className='text-2xl md:text-3xl lg:text-5xl font-bold'>Check out @foodieland on Instagram</h1>
                 <p className='max-w-4xl '>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi quibusdam temporibus dolorem, provident id odit quae autem ad voluptatem.</p>
             </div>
-            <div className='flex flex-col items-center space-y-20 p-6 w-full bg-blue-50 overflow-hidden' data-aos="zoom-out-down">
+            <div className='flex flex-col items-center space-y-20 p-6 w-full bg-blue-50 overflow-hidden'>
             <div className='grid place-items-center  gap-5 md:grid-cols-2 lg:grid-cols-4 w-full'>
                 <img src={post1} alt="" className='w-full' />
                 <img src={post2} alt="" className='w-full'/>
