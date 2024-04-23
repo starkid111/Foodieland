@@ -9,14 +9,14 @@ import { useEffect } from 'react';
 const BlogListContent = () => {
 
     useEffect(() => {
-        AOS.init({duration:2000})
+        AOS.init({duration:1000})
  },[] );
 
 
     return ( 
-        <div className=" mt-10 lg:container lg:mx-auto p-5 overflow-hidden" >
+        <div className=" mt-10 lg:container lg:mx-auto p-5 overflow-hidden"  data-aos="zoom-in-up">
             <div className="flex flex-col lg:flex-row overflow-hidden">
-                <div className="flex flex-col  space-y-3 lg:w-2/3 w-full overflow-hidden" data-aos="zoom-in-up">
+                <div className="flex flex-col  space-y-3 lg:w-2/3 w-full overflow-hidden" >
                     {blogs.map((blog)=> {
                         return (
                             <Link to={`/blogs/${blog.id}`}>
@@ -42,7 +42,7 @@ const BlogListContent = () => {
                     })}
                 </div>
 
-               <div className="flex flex-col space-y-12 lg:w-1/3 w-full overflow-hidden" data-aos="zoom-in-up">
+               <div className="flex flex-col space-y-12 lg:w-1/3 w-full overflow-hidden" >
                 <h1 className="font-bold text-4xl ">Tasty Recipe</h1>
                 <div className="space-y-5">
                      {foods.map((food) => {

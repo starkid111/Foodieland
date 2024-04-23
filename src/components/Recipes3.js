@@ -3,22 +3,18 @@ import { IoTimer } from "react-icons/io5";
 import { LuUtensils } from "react-icons/lu";
 import love from '../images/love.png';
 import { Link } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+
 
 
 
 const Recipes3 = () => {
    
-  useEffect(() => {
-    AOS.init({duration:1000})
-},[] )  
+
 
 
     return ( 
         <div className="mt-14 overflow-hidden">
-             <div className='grid place-items-center p-5 gap-4 space-y-6 md:space-y-0 md:grid-cols-2 lg:grid-cols-4 lg:container lg:mx-auto overflow-hidden' data-aos="flip-down">
+             <div className='grid place-items-center p-5 gap-4 space-y-6 md:space-y-0 md:grid-cols-2 lg:grid-cols-4 lg:container lg:mx-auto overflow-hidden' >
            {foods.map((food) =>  {
             if (food.id > 4 && food.id < 9) {
                 return  (

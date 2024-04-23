@@ -62,7 +62,7 @@ const RecipeContent = () => {
 
 
             <div className='flex flex-col md:space-x-12 w-full p-5 md:flex-row overflow-hidden ' >
-                  <div className='flex-col w-full space-y-6 overflow-hidden'  data-aos="zoom-in-up" >
+                  <div className='flex-col w-full space-y-6 overflow-hidden'   >
                       <div className='flex flex-col space-y-7 overflow-hidden'>
                         <h1 className='text-3xl font-bold'>Ingredients</h1>
                         <div className='flex flex-col space-y-6'>
@@ -131,7 +131,7 @@ const RecipeContent = () => {
                       </div>
                   </div>
 
-                  <div className='overflow-hidden' data-aos="zoom-in-up">
+                  <div className='overflow-hidden' >
                     <RecipeSide  title = "Other recipes" className="w-full" />
                   </div>
             </div>
