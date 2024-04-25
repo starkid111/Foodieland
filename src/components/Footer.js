@@ -21,7 +21,7 @@ const Footer = () => {
                 <p className='hidden md:block'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
                 <ul className='flex justify-between space-x-8 overflow-hidden' data-aos="fade-left">
-                        <li>  <NavLink to='/'> home </NavLink>  </li>
+                        <li>  <NavLink to='/'> Home </NavLink>  </li>
                         <li><NavLink to='/BlogList'> Blog </NavLink> </li>
                         <li><NavLink to='/Contact'> Contact </NavLink> </li>
                         <li> <NavLink to='/About'> About us </NavLink> </li>

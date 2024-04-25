@@ -57,7 +57,7 @@ const RecipeContent = () => {
             </div>
             
             <div className='p-5 overflow-hidden'>
-            <p data-aos="zoom-in-up">{Recipe.description}</p>
+            <p>{Recipe.description}</p>
             </div>
 
 

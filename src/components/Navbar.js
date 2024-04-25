@@ -25,7 +25,7 @@ const Navbar = () => {
           
                <div>
                     <ul className="flex  space-x-8 ">
-                      <li><NavLink to='/'> home </NavLink>  </li>
+                      <li><NavLink to='/'> Home </NavLink>  </li>
                       <li><NavLink to='/BlogList'> Blog </NavLink> </li>
                       <li><NavLink to='/Contact'> Contact </NavLink> </li>
                       <li> <NavLink to='/About'> About us </NavLink> </li>
@@ -57,7 +57,7 @@ const Navbar = () => {
 
              <div className={`container mx-auto flex flex-col items-center justify-center space-y-20  w-2/3 bg-white duration-300 p-7 z-100 h-screen  ${isMenuopen ? "block fixed  top-20% right-0" : "right-[-100%] fixed" }`}>
                   <ul className="flex flex-col justify-center space-y-14">
-                  <li><NavLink to='/'> home </NavLink>  </li>
+                  <li><NavLink to='/'> Home </NavLink>  </li>
                       <li><NavLink to='/BlogList'> Blog </NavLink> </li>
                       <li><NavLink to='/Contact'> Contact </NavLink> </li>
                       <li> <NavLink to='/About'> About us </NavLink> </li>
